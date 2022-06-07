@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block title %}<title>Query Patterns</title>{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center" style="resize: none" disabled>
+    <h3>Set of 5 documents</h3>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm">
+      <h6>Document 1</h6>
+
+      <textarea name="" id="" cols="30" rows="10" style="resize: none" disabled>
+        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button
+      </textarea>
+    </div>
+    <div class="col-sm">
+      <h6>Document 2</h6>
+      <textarea name="" id="" cols="30" rows="10" style="resize: none" disabled>
+      When using button classes on <a> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers
+        </textarea
+      >
+    </div>
+    <div class="col-sm">
+      <h6>Document 3</h6>
+      <textarea name="" id="" cols="30" rows="10" style="resize: none" disabled>
+      Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, so use spacing utilities as needed
+      </textarea>
+    </div>
+    <div class="col-sm">
+      <h6>Document 4</h6>
+      <textarea name="" id="" cols="30" rows="10" style="resize: none" disabled>
+      Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected. The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the open prop.
+      </textarea>
+    </div>
+    <div class="col-sm mt-3">
+      <h6>Document 5</h6>
+      <textarea name="" id="" cols="30" rows="10" style="resize: none" disabled>
+      All form controls should have labels, and this includes radio buttons, checkboxes, and switches. In most cases, this is done by using the <label> element (FormControlLabel). When a label can't be used, it's necessary to add an attribute directly to the input component. In this case, you can apply the additional attribute (e.g. aria-label, aria-labelledby, title) via the inputProps property.
+        </textarea
+      >
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+    <h3>Set of keywords</h3>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      {% for word in data %}
+      <span class="badge badge-primary">{{word}} </span>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center">
+    <h3>Search using Query Patterns</h3>
+  </div>
+  <hr />
+  <div class="row d-flex justify-content-center">
+    <div class="col-6">
+      <form action="/query_patterns/" method="GET">
+        {% csrf_token %}
+        <div class="form-group">
+          <select class="form-control" name="qtype" required>
+            <option hidden selected value="0">--Select query type--</option>
+            <option value="1">Single word query</option>
+            <option value="2">Pattern query</option>
+            <option value="3">Range query</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="query"
+            class="form-control"
+            placeholder="Enter query here..."
+            required
+          />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-dark">Serech</button>
+        <a href="{% url 'task5' %}" class="btn btn-danger">Refresh</a>
+      </form>
+    </div>
+  </div>
+  {% if flag == 1 %}
+  <div class="row mt-4 d-flex justify-content-center">
+    <h3>The relevant documents and their positions are as follows</h3>
+    <div class="col-12"></div>
+    {% for key,val in result.items %}
+    <ul>
+      <li>
+        {{key}} :
+        <ul>
+          {% for doc in val %}
+
+          <li>{{doc}}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+    <br />
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}

@@ -1,0 +1,42 @@
+"Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first"
+"front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components."
+"As of April 2022, Bootstrap is the eleventh most starred project on GitHub, with over 156,000 stars, behind freeCodeCamp, Vue.js framework, React library, TensorFlow and others.[2] Early beginnings"
+"Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to   inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto :  A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves   build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.[3]"
+"After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap and released as an open-source project on August 19, 2011.[4] It has continued to be maintained by Mark Otto, Jacob Thornton, a small group of core developers, and a large community of contributors.[5] Bootstrap 2"
+"On January 31, 2012, Bootstrap 2 was released, which added built-in support for Glyphicons, several new components, as well as changes to many of the existing components. This version supports responsive web design, meaning the layout of web pages adjusts dynamically, taking into account the characteristics of the device used (whether desktop, tablet, mobile phone).[6]"
+Bootstrap 3
+"On August 19, 2013, Bootstrap 3, was released. It redesigned components to use flat design and a mobile first approach. Bootstrap 3 features new plugin system with namespaced events. Bootstrap 3 dropped Internet Explorer 7 and Firefox 3.6 support, but there is an optional polyfill for these browsers.[7]"
+Bootstrap 4
+"Mark Otto announced Bootstrap 4 on October 29, 2014.[8] The first alpha version of Bootstrap 4 was released on August 19, 2015.[9] The first beta version was released on August 10, 2017.[10] Mark suspended work on Bootstrap 3 on September 6, 2016, to free up time to work on Bootstrap 4. Bootstrap 4 was finalized on January 18, 2018.[11]"
+Significant changes include: Major rewrite of the code Replacing Less with Sass
+"Addition of Reboot, a collection of element-specific CSS changes in a single file, based on Normalize"
+"Dropping support for IE8, IE9, and iOS 6 CSS Flexible Box support"
+Adding navigation customization options Adding responsive spacing and sizing utilities
+Switching from the pixels unit in CSS to root ems
+Increasing global font size from 14px to 16px for enhanced readability
+"Dropping the panel, thumbnail, pager, and well components"
+Dropping the Glyphicons icon font Huge number[quantify] of utility classes
+"Improved form styling, buttons, drop-down menus, media objects and image classes Bootstrap 4 supports the latest versions of Google Chrome, Firefox, Internet Explorer, Opera, and Safari (except on Windows). It additionally supports back to IE10 and the latest Firefox Extended Support Release (ESR).[12]"
+Bootstrap 5
+"Bootstrap 5 was officially released on May 5, 2021.[13][14] Major changes include:[15]"
+New offcanvas menu component
+Removing dependence on jQuery in favor of vanilla JavaScript
+Rewriting the grid to support responsive gutters and columns placed outside of rows Migrating the documentation from Jekyll to Hugo
+Dropping support for Internet Explorer[16]
+Moving testing infrastructure from QUnit to Jasmine Adding custom set of SVG icons
+Adding CSS custom properties Improved API
+Enhanced grid system Improved customizing docs Updated forms
+RTL support
+"Bootstrap is an HTML, CSS & JS Library that focuses on simplifying the development of informative web pages (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for"
+"light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight."
+"Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code. They also extend the functionality of some"
+"existing interface elements, including for example an auto-complete function for input fields."
+Example of a webpage using Bootstrap framework rendered in Firefox
+"The most prominent components of Bootstrap are its layout components, as they affect an entire web page. The basic layout component is called ""Container"", as every other element in the page is placed in it. Developers can choose between a fixed-width container and a fluid-width container. While the latter always fills the width of the web page, the former uses one of the five predefined fixed widths, depending on the size of the screen showing the page:"
+Smaller than 576 pixels
+576–768 pixels
+768–992 pixels
+992–1200 pixels  Larger than 1200 pixels
+"Once a container is in place, other Bootstrap layout components implement a CSS Flexbox layout through defining rows and columns."
+"A precompiled version of Bootstrap is available in the form of one CSS file and three JavaScript files that can be readily added to any project. The raw form of Bootstrap, however, enables developers to implement further customization and size optimizations. This raw form is modular, meaning that the developer can remove unneeded components,"
+apply a theme and modify the uncompiled Sass files.

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}<title>Assignments</title>{% endblock title %}
+{% block content %}
+<ul>
+      <li><a href="{% url 'task1' %}">Assignment 1</a></li>
+      <li><a href="{% url 'task1' %}" onclick="return false">Assignment 2</a></li>
+      <li><a href="{% url 'task1' %}" onclick="return false">Assignment 3</a></li>
+      <li><a href="{% url 'task1' %}" onclick="return false">Assignment 4</a></li>
+      <li><a href="{% url 'task5' %}">Assignment 5</a></li>
+      <li><a href="{% url 'task6' %}">Assignment 6</a></li>
+      <li><a href="{% url 'task7' %}">Assignment 7</a></li>
+      <li><a href="{% url 'task8' %}">Assignment 8</a></li>
+      <li><a href="{% url 'task9' %}">Assignment 9</a></li>
+      <li><a href="{% url 'task10' %}">Assignment 10</a></li>
+      <li><a href="{% url 'task11' %}">Assignment 11</a></li>
+    </ul>
+
+{% endblock content %}
+    

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}<title>Logical View</title>{% endblock title %}
+{% block content %}
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center">
+        <h3>Logical View</h3>
+      </div>
+  <div class="row">
+    <div class="col-12">
+      {% for word in data %}
+      <span class="badge badge-info">{{word}} </span>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

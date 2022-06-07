@@ -1,0 +1,29 @@
+Overview
+Node.js allows the creation of Web servers and networking tools using JavaScript and a
+"collection of ""modules"" that handle various core functionalities.[28][31][45][46][47] Modules are provided for file system I/O, networking (DNS, HTTP, TCP, TLS/SSL, or UDP), binary data (buffers), cryptography functions, data streams, and other core functions.[31][46][48] Node.js's modules use an API designed to reduce the complexity of writing server"
+applications.[31][46]
+"JavaScript is the only language that Node.js supports natively, but many compile-to-JS"
+"languages are available.[49] As a result, Node.js applications can be written in CoffeeScript,[50] Dart, TypeScript, ClojureScript and others."
+Node.js is primarily used to build network programs such as Web servers.[45] The most
+"significant difference between Node.js and PHP is that most functions in PHP block until completion (commands execute only after previous commands finish), while Node.js functions are non-blocking (commands execute concurrently or even in parallel,[51][52] and"
+use callbacks to signal completion or failure).[45]
+"Node.js is officially supported on Linux, macOS and Microsoft Windows 8.1 and Server 2012"
+"(and later),[3] with tier 2 support for SmartOS and IBM AIX and experimental support for FreeBSD. OpenBSD also works, and LTS versions available for IBM i (AS/400).[53] The provided source code may also be built on similar operating systems to those officially supported or be modified by third parties to support others such as NonStop OS[54] and Unix servers."
+Platform architecture
+"Node.js brings event-driven programming to web servers, enabling development of fast web"
+"servers in JavaScript.[31] Developers can create scalable servers without using threading,  by using a simplified model of event-driven programming that uses callbacks to signal the completion of a task.[31] Node.js connects the ease of a scripting language (JavaScript) with"
+the power of Unix network programming.[31]
+Node.js was built on top of Google's V8 JavaScript engine since it was open-sourced under
+"the BSD license. It is proficient with internet fundamentals such as HTTP, DNS, and TCP.[28] JavaScript was also a well-known language, making Node.js accessible to the web development community.[28]"
+Industry support
+"There are thousands of open-source libraries for Node.js, most of them hosted on the npm"
+"website. There are multiple developer conferences and events that support the Node.js community, including NodeConf, Node Interactive, and Node Summit as well as a number of regional events."
+The open-source community has developed web frameworks to accelerate the development
+"of applications. Such frameworks include Connect, Express.js, Socket.IO, Feathers.js, Koa.js, Hapi.js, Sails.js, Meteor, Derby, and many others.[31][55] Various packages have"
+also been created for interfacing with other languages or runtime environments such as
+Microsoft .NET.[56]
+Modern desktop IDEs provide editing and debugging features specifically for Node.js
+"applications. Such IDEs include Atom, Brackets, JetBrains WebStorm,[57][58] Microsoft Visual Studio (with Node.js Tools for Visual Studio,[59] or TypeScript with Node definitions,[60][61][62][63]) NetBeans,[64] Nodeclipse Enide Studio[65] (Eclipse-based), and Visual Studio Code.[66][67] Certain online web-based IDEs also support Node.js, such as"
+"Codeanywhere, Codenvy, Cloud9 IDE, Koding, and the visual flow editor in Node-RED."
+"Node.js is supported across a number of cloud-hosting platforms like Jelastic, Google Cloud"
+"Platform, AWS Elastic Beanstalk, Joyent and others."

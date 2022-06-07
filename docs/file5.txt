@@ -1,0 +1,24 @@
+Svelte is a free and open-source front end compiler created by Rich Harris and maintained
+"by the Svelte core team members.[4] Svelte is not a monolithic JavaScript library imported  by applications: instead, Svelte compiles HTML templates to specialized code that manipulates the DOM directly, which may reduce the size of transferred files and give better client performance;[5] application code is also processed by the compiler, inserting calls to automatically recompute data[6] and re-render UI elements when the data they depend on is modified.[7] This also avoids the overhead associated with runtime intermediate representations, such as virtual DOM,[8] unlike traditional frameworks (such as React and Vue) which carry out the bulk of their work at runtime, i.e in the browser. The compiler itself  is written in TypeScript. Its source code is licensed under MIT License and hosted on"
+GitHub.[9]
+"Svelte applications and components are defined in .svelte files, which are HTML files"
+extended with templating syntax that is similar to JSX. Svelte repurposes JavaScript's native labeled statement syntax $: to mark reactive statements. Top-level variables become the component's state and exported variables become the properties that the component receives.
+The Svelte maintainers created SvelteKit as the official way to build projects with Svelte. The
+"Svelte maintainers also maintain a number of integrations for popular software projects under the Svelte organization including integrations for Vite, Rollup, Webpack, TypeScript,"
+"VS Code, eslint, prettier, and more.[13]"
+Sapper (predecessor of SvelteKit) is a Next.js-style framework that dramatically reduces the
+amount of code that gets sent to the browser.[14]
+Svelte is widely praised by developers. Taking the top ranking in multiple large scale
+"developer surveys, it was chosen as the Stack Overflow 2021 most loved web framework[15] and 2020 State of JS frontend framework with the most satisfied developers.[16]"
+Svelte has been adopted by a number of high-profile web companies including The New
+"York Times, Apple, Spotify, Square, Yahoo, ByteDance, Rakuten, Bloomberg, Reuters, Ikea, Facebook, and Brave.[17][18][19]"
+"A community group of non-maintainers run the Svelte Summit conference, write a Svelte"
+"newsletter, host a Svelte podcast, and host a directory of Svelte tooling, components, and templates.[20]"
+"Vue.js modeled its API and single-file components after Ractive.js, the predecessor of"
+Svelte.[10]
+"The predecessor of Svelte is Ractive.js, which Rich Harris had developed earlier.[10]"
+Version 1 of Svelte was written in JavaScript and was released on 29 November 2016.
+Version 2 of Svelte was released on 19 April 2018.
+Version 3 of Svelte is written in TypeScript and was released on 21 April 2019.
+The SvelteKit web framework was announced in October 2020 and entered beta in March
+2021.[11][12]
